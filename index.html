@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <title>SNAPSKANDI - SNAPCHAT HACKING</title>
+  <style>
+
+  body {
+    background-color: #fefb00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+    #input-field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .bitcoin-transfer {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px grey;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #qr-code {
+    width: 200px;
+  }
+  #logo {
+    width: 250px;
+    margin-bottom: 1px;
+  }
+  #address_title {
+    text-align: center;
+  }
+  #amount_title {
+    text-align: center;
+  }
+  #address {
+    text-align: center;
+    margin-top: -50px;
+  }
+  #amount {
+    text-align: center;
+    margin-top: -50px;
+  }
+  #tg_link {
+    margin-top: 80px;
+    width: 110px;
+  }
+  #tg_link_2 {
+    margin-top: 10px;
+    width: 90px;
+  }
+  </style>
+
+</head>
+<body>
+  <div id="input-field">
+    <h4>👻SNAPCHAT HACKING SERVICE</h4>
+    <img src="logo.png" alt="LOGO" id="logo">
+    <h2 style="font-family: 'Raleway', sans-serif;">SNAPSKANDI</h2>
+    <span style="font-size: 0.75rem;">SNAPCHAT USERNAME:</span>
+    <input type="text" id="input">
+    <button id="submit-btn" class="btn btn-primary" style="margin-top: 15px; background-color: #FFC107; color: #333; padding: 10px 20px; border-radius: 5px; border: none; font-size: 16px; font-weight: bold;">Submit</button>
+    <a href="https://t.me/snapskandi"><img src="tg.png" alt="TG-LINK" id="tg_link"></a>
+  </div>
+  <div id="output">
+    <div class="bitcoin-transfer">
+      <img src="qr.png" alt="QR Code" id="qr-code">
+      <p id="address_title"><b>BTC ADRESS:</b></p>
+      <p id="adress" onclick="copyAddress()">bc1qeagg20fwdn670thudgan3lndvvh37uhuthya6c</p>
+      <p id="amount_title"><b>AMOUNT:</b></p>
+      <p>50€</p>
+      <a href="https://t.me/snapskandi"><img src="tg.png" alt="TG-LINK" id="tg_link_2"></a>
+    </div>
+  </div>
+  <script>
+
+    const inputField = document.getElementById("input-field");
+    const submitBtn = document.getElementById("submit-btn");
+    const output = document.getElementById("output");
+    const bitcoinTransfer = document.querySelector(".bitcoin-transfer");
+    const qrCode = document.getElementById("qr-code");
+    const address = document.getElementById("address");
+    const amount = document.getElementById("amount");
+
+    submitBtn.addEventListener("click", () => {
+      inputField.style.display = "none";
+      bitcoinTransfer.style.display = "flex";
+    });
+  </script>
+</body>
+</html>
